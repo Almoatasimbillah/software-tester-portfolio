@@ -1,3 +1,23 @@
+/* Custom Scrollbar - شكل السكرول بار */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* التعديلات السابقة زي ما هي مع إضافة بسيطة للـ Hover */
+.tool-card:hover, .card:hover, .artifact-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
 /* الألوان الأساسية - الوضع الداكن هو الافتراضي */
 :root {
     --bg: #121212;
