@@ -3,107 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almoatasim | Software Tester Portfolio</title>
+    <title>Almoatasim | QA Portfolio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="light-theme">
+<body class="dark-theme">
 
     <header>
         <nav>
-            <div class="logo">ALMOATASIM</div>
+            <div class="logo">ALMOATASIM<span>.</span></div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#artifacts">Artifacts</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+                <li><button id="theme-toggle"><i class="fas fa-sun"></i></button></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container" data-aos="fade-up">
-            <div class="profile-img-container">
+    <main class="container">
+        <section id="home" class="hero-bento" data-aos="fade-up">
+            <div class="hero-info">
+                <span class="badge">Available for Work</span>
+                <h1>Software <span class="highlight">Quality</span> Engineer</h1>
+                <p>I find what others miss. Specializing in manual & automated testing to deliver bug-free software.</p>
+                <div class="hero-btns">
+                    <a href="cv.pdf" class="btn primary" download>Get Resume</a>
+                    <a href="#projects" class="btn-text">View Work <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
                 <img src="profile.jpg" alt="Almoatasim" class="profile-img">
             </div>
-            <h1>Hi, I'm <span class="highlight">Almoatasim</span></h1>
-            <h3>Software Quality Assurance Engineer</h3>
-            <p>Dedicated to ensuring software reliability and flawless user experiences.</p>
-            <div class="hero-btns">
-                <a href="cv.pdf" class="btn" download>Download CV <i class="fas fa-download"></i></a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title" data-aos="zoom-in">What I Do</h2>
-            <div class="grid">
-                <div class="card" data-aos="fade-right" data-aos-delay="100">
-                    <i class="fas fa-microscope"></i>
-                    <h3>Manual Testing</h3>
-                    <p>Expertise in Functional, Smoke, and Regression testing.</p>
+        <section id="projects" class="section">
+            <h2 class="section-title" data-aos="fade-right">Featured Work</h2>
+            <div class="projects-bento">
+                <div class="p-card" data-aos="fade-up">
+                    <div class="p-tags"><span class="tag">Manual</span><span class="tag">Web</span></div>
+                    <h3>E-Commerce Test Suite</h3>
+                    <p>Complete test cycle for a large-scale shop including checkout & payment flows.</p>
+                    <a href="#" class="p-link">Case Study <i class="fas fa-external-link-alt"></i></a>
                 </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-file-alt"></i>
-                    <h3>Documentation</h3>
-                    <p>Writing detailed Test Plans and Test Cases.</p>
+                <div class="p-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-tags"><span class="tag">API</span><span class="tag">Postman</span></div>
+                    <h3>Banking API Testing</h3>
+                    <p>Validation of RESTful endpoints, status codes, and security headers.</p>
+                    <a href="#" class="p-link">View Docs <i class="fas fa-external-link-alt"></i></a>
                 </div>
-                <div class="card" data-aos="fade-left" data-aos-delay="300">
-                    <i class="fas fa-bug"></i>
-                    <h3>Bug Tracking</h3>
-                    <p>Reporting defects with precision using industry tools.</p>
+                <div class="p-card empty" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-tags"><span class="tag">Coming Soon</span></div>
+                    <h3>Next Project...</h3>
+                    <p>Currently working on something amazing with Automation.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="tools" class="tools-section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Tools & Technologies</h2>
-            <div class="tools-grid">
-                <div class="tool-card" data-aos="flip-left" data-aos-delay="100"><i class="fab fa-jira"></i><span>Jira</span></div>
-                <div class="tool-card" data-aos="flip-left" data-aos-delay="200"><i class="fas fa-code-branch"></i><span>Git</span></div>
-                <div class="tool-card" data-aos="flip-left" data-aos-delay="300"><i class="fas fa-envelope-open-text"></i><span>Postman</span></div>
-                <div class="tool-card" data-aos="flip-left" data-aos-delay="400"><i class="fas fa-table"></i><span>Excel</span></div>
-                <div class="tool-card" data-aos="flip-left" data-aos-delay="500"><i class="fab fa-chrome"></i><span>DevTools</span></div>
+        <section id="skills" class="section">
+            <h2 class="section-title" data-aos="fade-right">Toolkit</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="zoom-in"><i class="fab fa-jira"></i><span>Jira</span></div>
+                <div class="skill-item" data-aos="zoom-in"><i class="fas fa-code-branch"></i><span>Git</span></div>
+                <div class="skill-item" data-aos="zoom-in"><i class="fas fa-envelope-open-text"></i><span>Postman</span></div>
+                <div class="skill-item" data-aos="zoom-in"><i class="fab fa-chrome"></i><span>DevTools</span></div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="artifacts" class="artifacts">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-down">Testing Artifacts</h2>
-            <div class="grid">
-                <div class="artifact-card" data-aos="fade-up-right">
-                    <i class="fas fa-paste"></i>
-                    <h3>Bug Report Sample</h3>
-                    <a href="#" class="link">View Sample</a>
-                </div>
-                <div class="artifact-card" data-aos="fade-up-left">
-                    <i class="fas fa-list-check"></i>
-                    <h3>Test Case Design</h3>
-                    <a href="#" class="link">View Sample</a>
-                </div>
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2>Let's build something <span class="highlight">reliable</span>.</h2>
+            <div class="footer-links">
+                <a href="mailto:almoatasimhasanain@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/almoatasimhasanain">LinkedIn</a>
+                <a href="https://wa.me/201060058378">WhatsApp</a>
             </div>
+            <p class="copyright">© 2024 Almoatasim Hasanain</p>
         </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-links">
-                <a href="https://wa.me/201060058378" target="_blank" class="contact-item"><i class="fab fa-whatsapp"></i> +201060058378</a>
-                <a href="mailto:almoatasimhasanain@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> almoatasimhasanain@gmail.com</a>
-                <a href="https://www.linkedin.com/in/almoatasimhasanain" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
-            </div>
-        </div>
-    </section>
+    <a href="https://wa.me/201060058378" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
