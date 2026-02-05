@@ -33,21 +33,33 @@ AOS.init({
 });
 
 // 3. منطق تبديل الثيم (Dark/Light)
+// تصحيح منطق تبديل الثيم
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 const icon = themeToggle.querySelector('i');
 
 themeToggle.addEventListener('click', () => {
-    if (body.classList.contains('dark-theme')) {
-        body.classList.replace('dark-theme', 'light-theme');
-        icon.classList.replace('fa-sun', 'fa-moon');
-        localStorage.setItem('theme', 'light');
-    } else {
-        body.classList.replace('light-theme', 'dark-theme');
+    // التحقق من الثيم الحالي وتبديله
+    if (body.getAttribute('data-theme') === 'light') {
+        body.removeAttribute('data-theme'); // العودة للـ Dark (الافتراضي)
         icon.classList.replace('fa-moon', 'fa-sun');
         localStorage.setItem('theme', 'dark');
+    } else {
+        body.setAttribute('data-theme', 'light'); // التحول للـ Light
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
     }
 });
+
+// التأكد من تطبيق الثيم المحفوظ عند فتح الصفحة
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        body.setAttribute('data-theme', 'light');
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+});
+
 
 // 4. التأكد من الثيم المحفوظ عند تحميل الصفحة
 window.addEventListener('DOMContentLoaded', () => {
