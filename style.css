@@ -116,6 +116,37 @@ footer { padding: 100px 0 50px; background: var(--card); margin-top: 100px; bord
 .footer-links a { color: var(--text); text-decoration: none; font-size: 1.2rem; font-weight: 700; }
 .copyright { color: var(--subtext); font-size: 0.8rem; }
 
+
+
+/* تنسيق أيقونات التواصل في الفوتر */
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.footer-social-icons a {
+    color: var(--text);
+    font-size: 2.5rem; /* حجم الأيقونات */
+    transition: 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: var(--primary);
+    transform: translateY(-5px);
+}
+
+/* التأكد من تباين الألوان في الـ Light Mode للأقسام */
+[data-theme="light"] .hero-bento, 
+[data-theme="light"] .p-card, 
+[data-theme="light"] .skill-item {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+
 /* WhatsApp Float Button */
 .whatsapp-float { 
     position: fixed; 
