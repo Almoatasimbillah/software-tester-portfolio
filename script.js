@@ -4,11 +4,11 @@ const body = document.body;
 const icon = themeToggle.querySelector('i');
 
 themeToggle.addEventListener('click', () => {
-    if (body.hasAttribute('data-theme')) {
+    if (body.getAttribute('data-theme') === 'light') {
         body.removeAttribute('data-theme');
         icon.classList.replace('fa-sun', 'fa-moon');
     } else {
-        body.setAttribute('data-theme', 'dark');
+        body.setAttribute('data-theme', 'light');
         icon.classList.replace('fa-moon', 'fa-sun');
     }
 });
