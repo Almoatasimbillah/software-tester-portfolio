@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almoatasim | Software Tester Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -25,7 +26,7 @@
     </header>
 
     <section id="home" class="hero">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="profile-img-container">
                 <img src="profile.jpg" alt="Almoatasim" class="profile-img">
             </div>
@@ -41,22 +42,22 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">What I Do</h2>
+            <h2 class="section-title" data-aos="zoom-in">What I Do</h2>
             <div class="grid">
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="100">
                     <i class="fas fa-microscope"></i>
                     <h3>Manual Testing</h3>
-                    <p>Expertise in Functional, Smoke, and Regression testing to catch every bug.</p>
+                    <p>Expertise in Functional, Smoke, and Regression testing.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-file-alt"></i>
                     <h3>Documentation</h3>
-                    <p>Writing detailed Test Plans and Test Cases that cover all scenarios.</p>
+                    <p>Writing detailed Test Plans and Test Cases.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-left" data-aos-delay="300">
                     <i class="fas fa-bug"></i>
                     <h3>Bug Tracking</h3>
-                    <p>Reporting and managing defects with precision using industry tools.</p>
+                    <p>Reporting defects with precision using industry tools.</p>
                 </div>
             </div>
         </div>
@@ -64,32 +65,29 @@
 
     <section id="tools" class="tools-section">
         <div class="container">
-            <h2 class="section-title">Tools & Technologies</h2>
+            <h2 class="section-title" data-aos="fade-up">Tools & Technologies</h2>
             <div class="tools-grid">
-                <div class="tool-card"><i class="fab fa-jira"></i><span>Jira</span></div>
-                <div class="tool-card"><i class="fas fa-code-branch"></i><span>Git</span></div>
-                <div class="tool-card"><i class="fas fa-envelope-open-text"></i><span>Postman</span></div>
-                <div class="tool-card"><i class="fas fa-table"></i><span>Excel</span></div>
-                <div class="tool-card"><i class="fab fa-chrome"></i><span>DevTools</span></div>
+                <div class="tool-card" data-aos="flip-left" data-aos-delay="100"><i class="fab fa-jira"></i><span>Jira</span></div>
+                <div class="tool-card" data-aos="flip-left" data-aos-delay="200"><i class="fas fa-code-branch"></i><span>Git</span></div>
+                <div class="tool-card" data-aos="flip-left" data-aos-delay="300"><i class="fas fa-envelope-open-text"></i><span>Postman</span></div>
+                <div class="tool-card" data-aos="flip-left" data-aos-delay="400"><i class="fas fa-table"></i><span>Excel</span></div>
+                <div class="tool-card" data-aos="flip-left" data-aos-delay="500"><i class="fab fa-chrome"></i><span>DevTools</span></div>
             </div>
         </div>
     </section>
 
     <section id="artifacts" class="artifacts">
         <div class="container">
-            <h2 class="section-title">Testing Artifacts</h2>
-            <p class="section-desc">Sample documents from my testing projects.</p>
+            <h2 class="section-title" data-aos="fade-down">Testing Artifacts</h2>
             <div class="grid">
-                <div class="artifact-card">
+                <div class="artifact-card" data-aos="fade-up-right">
                     <i class="fas fa-paste"></i>
                     <h3>Bug Report Sample</h3>
-                    <p>Professional bug reports including steps to reproduce and severity levels.</p>
                     <a href="#" class="link">View Sample</a>
                 </div>
-                <div class="artifact-card">
+                <div class="artifact-card" data-aos="fade-up-left">
                     <i class="fas fa-list-check"></i>
                     <h3>Test Case Design</h3>
-                    <p>Comprehensive test suites for login, checkout, and user profiles.</p>
                     <a href="#" class="link">View Sample</a>
                 </div>
             </div>
@@ -97,26 +95,17 @@
     </section>
 
     <section id="contact" class="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-links">
-                <a href="https://wa.me/201060058378" target="_blank" class="contact-item">
-                    <i class="fab fa-whatsapp"></i> +201060058378
-                </a>
-                <a href="mailto:almoatasimhasanain@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> almoatasimhasanain@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/almoatasimhasanain" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i> LinkedIn Profile
-                </a>
+                <a href="https://wa.me/201060058378" target="_blank" class="contact-item"><i class="fab fa-whatsapp"></i> +201060058378</a>
+                <a href="mailto:almoatasimhasanain@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> almoatasimhasanain@gmail.com</a>
+                <a href="https://www.linkedin.com/in/almoatasimhasanain" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Almoatasim. Software Tester Portfolio.</p>
-    </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
