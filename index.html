@@ -1,97 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almoatasimbillah | Software Tester</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="light-theme"> <header>
-        <nav>
-            <div class="logo">ALMOATASIM</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#artifacts">Artifacts</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="profile-img-container">
-                <img src="profile.jpg" alt="Almoatasimbillah" class="profile-img">
+<section id="services" class="services">
+        <h2>What I Do</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-microscope"></i>
+                <h3>Manual Testing</h3>
+                <p>Functional, Smoke, and Regression testing for web applications.</p>
             </div>
-            <h1>Hi, I'm <span class="highlight">Almoatasim</span></h1>
-            <h3>Software Quality Assurance Engineer</h3>
-            <p>Expert in finding bugs and ensuring software excellence.</p>
-            <div class="hero-btns">
-                <a href="cv.pdf" class="btn" download>Download CV <i class="fas fa-download"></i></a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+            <div class="card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Test Documentation</h3>
+                <p>Writing clear Test Plans, Test Cases, and comprehensive Bug Reports.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-terminal"></i>
+                <h3>API & Database</h3>
+                <p>Checking data integrity via API requests and basic SQL queries.</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <h2>My Services</h2>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-search"></i>
-                <h3>Manual Testing</h3>
-                <p>Execution of test cases, exploratory testing, and detailed bug hunting.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-bug"></i>
-                <h3>Bug Reporting</h3>
-                <p>Creating professional bug reports with clear steps to reproduce and severity.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-network-wired"></i>
-                <h3>API Testing</h3>
-                <p>Testing application interfaces using tools like Postman to ensure data integrity.</p>
-            </div>
+    <section id="tools" class="tools-section">
+        <h2>Tools & Technologies</h2>
+        <div class="tools-flex">
+            <div class="tool-item"><i class="fab fa-jira"></i> Jira</div>
+            <div class="tool-item"><i class="fas fa-envelope-open-text"></i> Postman</div>
+            <div class="tool-item"><i class="fas fa-table"></i> MS Excel</div>
+            <div class="tool-item"><i class="fab fa-chrome"></i> DevTools</div>
+            <div class="tool-item"><i class="fab fa-github"></i> Git/GitHub</div>
         </div>
     </section>
 
     <section id="artifacts" class="artifacts">
-        <h2>Test Artifacts</h2>
+        <h2>My Testing Artifacts</h2>
+        <p class="section-desc">Samples of my professional documentation during the learning journey.</p>
         <div class="grid">
             <div class="artifact-card">
-                <h3>Bug Report Template</h3>
-                <p>Sample of how I document issues to help developers fix them faster.</p>
-                <a href="#" class="link">View Sample</a>
+                <div class="artifact-icon"><i class="fas fa-bug"></i></div>
+                <h3>Standard Bug Report</h3>
+                <p>Clear, reproducible steps with screenshots and priority levels.</p>
+                <a href="#" class="link">View Template</a>
             </div>
             <div class="artifact-card">
-                <h3>Test Case Design</h3>
-                <p>Structured test cases covering various scenarios for login and checkout pages.</p>
-                <a href="#" class="link">View Sample</a>
+                <div class="artifact-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Test Case Suite</h3>
+                <p>Full coverage for User Authentication & Checkout flows.</p>
+                <a href="#" class="link">View Template</a>
             </div>
         </div>
     </section>
-
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-links">
-            <a href="https://wa.me/201060058378" target="_blank" class="contact-item">
-                <i class="fab fa-whatsapp"></i> +201060058378
-            </a>
-            <a href="mailto:almoatasimhasanain@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i> almoatasimhasanain@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/almoatasimhasanain" target="_blank" class="contact-item">
-                <i class="fab fa-linkedin"></i> LinkedIn Profile
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Almoatasim. Built with Precision.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
