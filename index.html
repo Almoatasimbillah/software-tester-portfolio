@@ -3,64 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almoatasimbillah | Software Tester Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+    <title>Almoatasimbillah | Software Tester</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <header>
+<body class="light-theme"> <header>
         <nav>
-            <div class="logo">Almoatasimbillah</div>
+            <div class="logo">ALMOATASIM</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Testing Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#artifacts">Artifacts</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Almoatasimbillah</span></h1>
-            <p>Quality Assurance & Software Tester</p>
-            <p class="sub-text">Ensuring software quality through meticulous manual and automated testing.</p>
-            <a href="#contact" class="btn">Get In Touch</a>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <span>Manual Testing</span>
-            <span>Regression Testing</span>
-            <span>Bug Reporting</span>
-            <span>SDLC / STLC</span>
-            <span>Test Cases Design</span>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Testing Samples</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>E-commerce Testing</h3>
-                <p>Designed comprehensive test cases and bug reports for a demo e-commerce platform.</p>
-                <span class="tag">Manual Testing</span>
+        <div class="hero-container">
+            <div class="profile-img-container">
+                <img src="profile.jpg" alt="Almoatasimbillah" class="profile-img">
             </div>
-            
-            <div class="project-card empty">
-                <h3>Automation Project</h3>
-                <p>Currently learning Selenium/Cypress to build automated test suites.</p>
-                <span class="tag">Coming Soon</span>
+            <h1>Hi, I'm <span class="highlight">Almoatasim</span></h1>
+            <h3>Software Quality Assurance Engineer</h3>
+            <p>Expert in finding bugs and ensuring software excellence.</p>
+            <div class="hero-btns">
+                <a href="cv.pdf" class="btn" download>Download CV <i class="fas fa-download"></i></a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>Contact me: <a href="https://github.com/Almoatasimbillah">GitHub</a> | <a href="mailto:your-email@example.com">Email</a></p>
+    <section id="services" class="services">
+        <h2>My Services</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-search"></i>
+                <h3>Manual Testing</h3>
+                <p>Execution of test cases, exploratory testing, and detailed bug hunting.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bug"></i>
+                <h3>Bug Reporting</h3>
+                <p>Creating professional bug reports with clear steps to reproduce and severity.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-network-wired"></i>
+                <h3>API Testing</h3>
+                <p>Testing application interfaces using tools like Postman to ensure data integrity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="artifacts" class="artifacts">
+        <h2>Test Artifacts</h2>
+        <div class="grid">
+            <div class="artifact-card">
+                <h3>Bug Report Template</h3>
+                <p>Sample of how I document issues to help developers fix them faster.</p>
+                <a href="#" class="link">View Sample</a>
+            </div>
+            <div class="artifact-card">
+                <h3>Test Case Design</h3>
+                <p>Structured test cases covering various scenarios for login and checkout pages.</p>
+                <a href="#" class="link">View Sample</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-links">
+            <a href="https://wa.me/201060058378" target="_blank" class="contact-item">
+                <i class="fab fa-whatsapp"></i> +201060058378
+            </a>
+            <a href="mailto:almoatasimhasanain@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i> almoatasimhasanain@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/almoatasimhasanain" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Almoatasim. Built with Precision.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
