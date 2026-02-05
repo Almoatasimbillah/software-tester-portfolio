@@ -1,23 +1,30 @@
-// Dark Mode Toggle
+// 1. Dark Mode Logic
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
+const icon = themeToggle.querySelector('i');
 
 themeToggle.addEventListener('click', () => {
     if (body.hasAttribute('data-theme')) {
         body.removeAttribute('data-theme');
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        icon.classList.replace('fa-sun', 'fa-moon');
     } else {
         body.setAttribute('data-theme', 'dark');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        icon.classList.replace('fa-moon', 'fa-sun');
     }
 });
 
-// Smooth Scroll
+// 2. Smooth Scrolling for all links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
+
+// 3. Simple Console Log to check if JS is loaded
+console.log("Portfolio Loaded Successfully - Welcome Almoatasim!");
