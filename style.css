@@ -64,3 +64,37 @@ footer { padding: 80px 0; text-align: center; background: var(--card); border-ra
     .hero-bento, .edu-grid, .skills-grid, .projects-bento { grid-template-columns: 1fr; }
     nav ul { display: none; }
 }
+
+/* تنسيق كروت التعليم */
+.edu-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.edu-card { 
+    background: var(--card); 
+    padding: 30px; 
+    border-radius: 25px; 
+    border: 1px solid var(--border); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.edu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.edu-header i { font-size: 1.8rem; color: var(--primary); }
+.year-tag { background: rgba(52, 152, 219, 0.1); color: var(--primary); padding: 5px 12px; border-radius: 15px; font-weight: 700; font-size: 0.8rem; }
+
+/* تنسيق شبكة المهارات المتماثلة */
+.skills-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة متساوية */
+    gap: 15px; 
+}
+.skill-item { 
+    background: var(--card); 
+    padding: 25px; 
+    border-radius: 20px; 
+    border: 1px solid var(--border); 
+    text-align: center; 
+}
+.skill-item i { font-size: 1.8rem; color: var(--primary); display: block; margin-bottom: 10px; }
+
+/* للموبايل عشان ميبقوش 3 أعمدة وشكلهم يصغر */
+@media (max-width: 768px) {
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
